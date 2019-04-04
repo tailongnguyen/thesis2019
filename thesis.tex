@@ -1,0 +1,55 @@
+\documentclass[12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{subfig}
+\usepackage[acronym]{glossaries}
+
+\newglossaryentry{cnn}{name=cnn,description={Convolutional Neural Network}}
+\newglossaryentry{adt}{name=adt,description={Atlantic Daylight Time}}
+\newglossaryentry{est}{name=est,description={Eastern Standard Time}}
+
+%
+\title{Reinforcement Learning Based Navigation with Semantic Knowledge of Indoor Environment}	%% title
+\author{NGUYEN, Tai Long}			%% author's name
+
+%
+\newcommand{\argmax}{\arg\!\max}
+
+\makeglossaries
+
+\begin{document}
+%
+\maketitle
+\tableofcontents
+
+%
+\chapter*{Acknowledgements}
+
+First of all, I would like to express my sincere thanks to my advisor Dr. Nguyen Do Van for his support and guidance throughout this research work. I would also like to thank teachers and members of Human Machine Interaction Laboratory of University of Engineering and Technology for their help. Because time is limited and this research inevitably has shortcomings, I look forward to the comments of the teachers for future improvements.
+
+%
+\listoffigures
+\listoftables
+%
+
+\input{chapters/introduction}\newpage\cleardoublepage
+\input{chapters/background}\newpage\cleardoublepage
+\input{chapters/method}\newpage\cleardoublepage
+\input{chapters/evaluation}\newpage\cleardoublepage
+\input{chapters/conclusion}\newpage\cleardoublepage
+
+%Adding the acronyms to the glossary without displaying them here:
+\glsadd{cnn}
+
+\printglossaries
+
+\nocite{*}
+\bibliography{references}\newpage\cleardoublepage
+\bibliographystyle{plain}
+\end{document}

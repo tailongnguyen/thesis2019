@@ -1,0 +1,90 @@
+\ifglsentryexists{Aaa}{}%
+{%
+\gls@defglossaryentry{Aaa}%
+{%
+name={AAA},%
+sort={AAA},%
+type={main},%
+first={AAA},%
+firstplural={AAAs},%
+text={AAA},%
+plural={AAAs},%
+description={First abbreviation},%
+descriptionplural={First abbreviation},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Bbb}{}%
+{%
+\gls@defglossaryentry{Bbb}%
+{%
+name={BBB},%
+sort={BBB},%
+type={main},%
+first={BBB},%
+firstplural={BBBs},%
+text={BBB},%
+plural={BBBs},%
+description={Second abbreviation},%
+descriptionplural={Second abbreviation},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Ccc}{}%
+{%
+\gls@defglossaryentry{Ccc}%
+{%
+name={CCC},%
+sort={CCC},%
+type={main},%
+first={CCC},%
+firstplural={CCCs},%
+text={CCC},%
+plural={CCCs},%
+description={Third abbreviation},%
+descriptionplural={Third abbreviation},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%

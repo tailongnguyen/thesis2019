@@ -1,0 +1,18 @@
+\chapter{Introduction}
+In this chapter, I will briefly introduce the problem, the related works and state out the major contributions of this research.
+
+
+\section{Problem Definition}
+
+Robot navigation is referred to the problem where a robot is taught, or trained, to navigate smoothly in an environment in order to reach a particular targeted position. In other words, the learning robot must not collide to any obstacle or get stucked in a loop when moving around. Due to the multi-spectral applications, robot navigation has long been one of the most important tasks when it comes to deploying machine learning systems in real world.
+
+\section{Related Works}
+Enabling robots to autonomously navigate in complex environments is essential. Prior methods approached this problem by having the robot to maintain an internal map of the world, and then use a localization and planning method to navigate through that map. However, not only these approaches often include a variety of assumptions, but they are also computationally intensive due to high sample complexity. Meanwhile, deep neural networks demonstrated some success in navigational tasks, directly predicting actions from raw pixel observations of an agent. An obvious drawback of this class of models is their demand for supervision, while collecting training data for navigational tasks is tedious and labour intensive. Fortunately, learning to navigate can also be formulated by Reinforcement Learning, the algorithm which allows an agent to learn in a self-supervised manner by trial-and-error, guided only by a reward function. 
+
+In the past few years, several RL-based methods have been introduced to solve this problem effectively on both real-world and simulated environments. Yuke Zhu et al  \cite{yuzhu} proposed a method that uses both current observation and image of target as input of the neural network so it can learn to behave in different scenes and find novel objects. Despite promising performance, the input pipeline that requires collecting images of target might be inefficient when applying to real world.
+
+Also aiming for training an agent that can navigate and find different objects in different scenes, Ii Yang et al \cite{iiyang} aggregated Graph Convolutional Network and semantic text embedding to further enhance its generalization. The encoding the relationships between objects given by the graph significantly increases the performance of model compared to vanilla famous A3C. However, the authors used classification scores pretrained on ImageNet \cite{imagenet} dataset, which is not fully-customized for any specify set of training, indicating that there are rooms left for improvement. 
+
+\section{Main Contribution}
+
+Extending the idea of \cite{iiyang}, this work also integrates Graph Convolutional Network into learning algorithm. However, the input feeded to graph is object detection information rather than classification scores.
